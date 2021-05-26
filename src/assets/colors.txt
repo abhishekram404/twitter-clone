@@ -1,0 +1,7 @@
+
+primarycolor : rgba(29,161,242,1.00)
+                #1DA1F2
+
+Home Black : #0F1419
+Grey : #5B7083
+Bakground : #F7F9Fa
