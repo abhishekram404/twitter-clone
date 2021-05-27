@@ -5,7 +5,7 @@ export default function WhoToFollow() {
   return (
     <div className="who-to-follow">
       <div className="top">
-        <h2>Trends for you</h2>
+        <h2>Who to Follow</h2>
       </div>
       <div className="suggestions">
         <Suggestion />
