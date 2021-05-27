@@ -14,6 +14,8 @@
   }
   .suggestions {
     .suggestion {
+      transition: 0.4s;
+
       padding: 15px 20px;
       display: grid;
       grid-template-columns: 48px 1fr 80px;
@@ -44,7 +46,17 @@
         line-height: 30px;
         color: $primaryColor;
         font-weight: bold;
+        cursor: pointer;
+        transition: 0.4s;
       }
+      .follow-btn:hover {
+        background: $primaryColor;
+        color: #fff;
+      }
+    }
+
+    .suggestion:hover {
+      background: #ebeef0;
     }
     .suggestion:not(:last-child) {
       border-bottom: 1px solid #ebeef0;

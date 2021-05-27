@@ -286,6 +286,8 @@ body .App {
 }
 
 .who-to-follow .suggestions .suggestion {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   padding: 15px 20px;
   display: -ms-grid;
   display: grid;
@@ -333,6 +335,18 @@ body .App {
   line-height: 30px;
   color: #1da1f2;
   font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.who-to-follow .suggestions .suggestion .follow-btn:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.who-to-follow .suggestions .suggestion:hover {
+  background: #ebeef0;
 }
 
 .who-to-follow .suggestions .suggestion:not(:last-child) {
