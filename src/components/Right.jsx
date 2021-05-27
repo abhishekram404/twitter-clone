@@ -1,5 +1,6 @@
 import React from "react";
 import Search from "./sub-components/Search";
+import TopicsToFollow from "./sub-components/TopicsToFollow";
 import TrendsForYou from "./sub-components/TrendsForYou";
 import WhoToFollow from "./sub-components/WhoToFollow";
 export default function Right() {
@@ -8,6 +9,7 @@ export default function Right() {
       <Search />
       <TrendsForYou />
       <WhoToFollow />
+      <TopicsToFollow />
     </div>
   );
 }

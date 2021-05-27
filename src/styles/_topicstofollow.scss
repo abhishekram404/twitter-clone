@@ -1,0 +1,58 @@
+.topics-to-follow {
+  background: $background;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ebeef0;
+    padding: 15px;
+  }
+  .topics {
+    .topic {
+      padding: 15px 20px;
+      display: grid;
+      grid-template-columns: 1fr 80px 30px;
+      align-items: center;
+      gap: 10px;
+
+      .follow-btn {
+        @include follow-btn;
+      }
+      .close-btn {
+        @include csquare(30px, 30px);
+        @include flex-center;
+        overflow: hidden;
+        svg {
+          height: 14px;
+          width: 14px;
+          fill: $grey;
+        }
+      }
+      .close-btn:hover {
+        background: rgba($color: $primaryColor, $alpha: 0.2);
+      }
+    }
+    .topic:hover {
+      background: #ebeef0;
+    }
+    .topic:not(:last-child) {
+      border-bottom: 1px solid #ebeef0;
+    }
+  }
+  .show-more {
+    padding: 15px 20px;
+    a {
+      text-decoration: none;
+      color: $primaryColor;
+    }
+  }
+  .show-more:hover {
+    background: #ebeef0;
+  }
+}

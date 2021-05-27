@@ -366,6 +366,108 @@ body .App {
   background: #ebeef0;
 }
 
+.topics-to-follow {
+  background: #f7f9fa;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.topics-to-follow .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ebeef0;
+  padding: 15px;
+}
+
+.topics-to-follow .topics .topic {
+  padding: 15px 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 80px 30px;
+      grid-template-columns: 1fr 80px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.topics-to-follow .topics .topic .follow-btn {
+  border: 2px solid #1da1f2;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: #1da1f2;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.topics-to-follow .topics .topic .close-btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.topics-to-follow .topics .topic .close-btn svg {
+  height: 14px;
+  width: 14px;
+  fill: #5b7083;
+}
+
+.topics-to-follow .topics .topic .close-btn:hover {
+  background: rgba(29, 161, 242, 0.2);
+}
+
+.topics-to-follow .topics .topic:hover {
+  background: #ebeef0;
+}
+
+.topics-to-follow .topics .topic:not(:last-child) {
+  border-bottom: 1px solid #ebeef0;
+}
+
+.topics-to-follow .show-more {
+  padding: 15px 20px;
+}
+
+.topics-to-follow .show-more a {
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+.topics-to-follow .show-more:hover {
+  background: #ebeef0;
+}
+
 .right {
   padding: 0px 15px;
   display: -webkit-box;

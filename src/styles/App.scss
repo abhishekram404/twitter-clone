@@ -15,6 +15,17 @@ body {
   }
 }
 
+@mixin follow-btn {
+  border: 2px solid $primaryColor;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: $primaryColor;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
 @mixin square($width, $height) {
   height: $height;
   width: $width;
