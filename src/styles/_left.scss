@@ -2,4 +2,88 @@
   position: sticky;
   top: 0;
   height: 100vh;
+  width: 23vw;
+  display: flex;
+  justify-content: flex-start;
+
+  .nav-component {
+    padding-left: 2.5rem;
+    .nav-bar {
+      width: 20vw;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      a {
+        height: 25px;
+        width: fit-content;
+        padding: 0.8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: black;
+        text-decoration: none;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: rgba(29, 161, 242, 0.1);
+          border-radius: 25px;
+          width: fit-content;
+          color: $primaryColor;
+          fill: $primaryColor;
+        }
+
+        svg {
+          height: 26px;
+          width: 26px;
+        }
+
+        .r-13gxpu9 {
+          fill: $primaryColor;
+        }
+
+        .r-16y2uox {
+          padding: 0%;
+          height: 30px;
+          width: 30px;
+        }
+
+        .nav-name {
+          font-size: 20px;
+          text-decoration: none;
+          font-weight: 700;
+          margin-left: 20px;
+          margin-right: 16px;
+          vertical-align: top;
+        }
+      }
+
+      .button {
+        background-color: $primaryColor;
+        height: 3rem;
+        width: 15rem;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-top: 5px;
+        transition: all 0.3s ease;
+
+
+        &:active {
+          background-color: $primaryColor;
+        }
+        &:hover {
+          background-color: rgb(26, 145, 218);
+        }
+        .button-name {
+          font-size: 20px;
+          text-decoration: none;
+          font-weight: 150px;
+          color: whitesmoke;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
 }
