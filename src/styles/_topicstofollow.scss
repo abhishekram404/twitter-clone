@@ -24,6 +24,10 @@
       .follow-btn {
         @include follow-btn;
       }
+      .follow-btn:hover {
+        background: $primaryColor;
+        color: #fff;
+      }
       .close-btn {
         @include csquare(30px, 30px);
         @include flex-center;

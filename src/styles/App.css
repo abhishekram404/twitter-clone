@@ -20,7 +20,6 @@ body .App {
   display: grid;
   -ms-grid-columns: 1fr 2fr 1.4fr;
       grid-template-columns: 1fr 2fr 1.4fr;
-  border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 .middle {
@@ -421,6 +420,11 @@ body .App {
   transition: 0.4s;
 }
 
+.topics-to-follow .topics .topic .follow-btn:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
 .topics-to-follow .topics .topic .close-btn {
   height: 30px;
   width: 30px;
@@ -466,6 +470,23 @@ body .App {
 
 .topics-to-follow .show-more:hover {
   background: #ebeef0;
+}
+
+.right-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.right-footer a {
+  text-decoration: none;
+}
+
+.right-footer > * {
+  color: #5b7083;
+  margin: 5px 10px;
 }
 
 .right {
