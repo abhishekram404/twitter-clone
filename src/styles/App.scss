@@ -1,5 +1,39 @@
-.App {
-  width: 100%;
+$primaryColor: #1da1f2;
+$black: #0f1419;
+$grey: #5b7083;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  .App {
+    width: 100%;
+  }
+}
+
+@mixin square($width, $height) {
+  height: $height;
+  width: $width;
+}
+@mixin csquare($width, $height) {
+  height: $height;
+  width: $width;
+  border-radius: 50%;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @import "main.scss";

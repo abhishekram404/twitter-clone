@@ -1,1 +1,10 @@
 @import "search";
+@import "trendsforyou";
+
+.right {
+  padding: 0px 15px;
+  @include flex-column;
+}
+.right > * {
+  margin-bottom: 15px;
+}

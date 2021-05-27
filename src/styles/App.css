@@ -1,15 +1,25 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+body .App {
   width: 100%;
 }
 
 .container {
-  min-height: 100vh;
   margin: 0px auto;
   width: 1350px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1.5fr;
-      grid-template-columns: 1fr 2fr 1.5fr;
+  -ms-grid-columns: 1fr 2fr 1.4fr;
+      grid-template-columns: 1fr 2fr 1.4fr;
   border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -26,8 +36,245 @@
   height: 100vh;
 }
 
-.search-bar {
+.search-cont {
   width: 100%;
-  background-color: #f7f9fa;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding: 5px 0px;
+  background: #fff;
+}
+
+.search-cont .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #ebeef0;
+  border-radius: 30px;
+  padding: 0px 20px;
+  overflow: hidden;
+}
+
+.search-cont .search-bar label svg {
+  width: 20px;
+  height: 20px;
+  fill: #6d8090;
+}
+
+.search-cont .search-bar .clear-label {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #1da1f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-cont .search-bar .clear-label .clear {
+  fill: #fff;
+  width: 10px;
+  height: 10px;
+}
+
+.search-cont .search-bar input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 15px 10px;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.search-cont .search-active {
+  background: transparent;
+  -webkit-box-shadow: 0 0 0 1px #1da1f2;
+          box-shadow: 0 0 0 1px #1da1f2;
+}
+
+.search-cont .search-icon-active {
+  fill: #1da1f2;
+}
+
+.trends-for-you {
+  background: #f7f9fa;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.trends-for-you .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ebeef0;
+  padding: 15px;
+}
+
+.trends-for-you .top h2 {
+  font-size: 1.5rem;
+}
+
+.trends-for-you .top span {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trends-for-you .top span svg {
+  height: 25px;
+  width: 25px;
+  fill: #1da1f2;
+}
+
+.trends-for-you .top span:hover {
+  background: rgba(29, 161, 242, 0.2);
+}
+
+.trends-for-you .trends-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trends-for-you .trends-list .trend {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trends-for-you .trends-list .trend .trend-left small {
+  font-size: 0.8rem;
+  color: #5e7385;
+}
+
+.trends-for-you .trends-list .trend .trend-left h2 {
+  font-size: 1rem;
+  color: #0f1419;
+  margin: 5px 0px;
+}
+
+.trends-for-you .trends-list .trend .trend-right {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trends-for-you .trends-list .trend .trend-right .options-icon {
+  fill: #6d8090;
+  height: 18px;
+  width: 18px;
+}
+
+.trends-for-you .trends-list .trend .trend-right:hover {
+  background-color: rgba(29, 161, 242, 0.2);
+}
+
+.trends-for-you .trends-list .trend .trend-right:hover > .options-icon {
+  fill: #1da1f2;
+}
+
+.trends-for-you .trend:not(:last-child) {
+  border-bottom: 1px solid #ebeef0;
+}
+
+.trends-for-you .trend:hover {
+  background: #ebeef0;
+}
+
+.trends-for-you .show-more {
+  padding: 15px 20px;
+}
+
+.trends-for-you .show-more a {
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+.trends-for-you .show-more:hover {
+  background: #ebeef0;
+}
+
+.right {
+  padding: 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right > * {
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=App.css.map */
