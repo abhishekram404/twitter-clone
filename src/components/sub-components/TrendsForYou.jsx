@@ -23,7 +23,7 @@ export default function TrendsForYou() {
         <Trend />
       </div>
       <div className="show-more">
-        <a href="#">Show More</a>
+        <a href="#home">Show More</a>
       </div>
     </div>
   );

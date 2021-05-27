@@ -260,6 +260,98 @@ body .App {
   background: #ebeef0;
 }
 
+.who-to-follow {
+  overflow: hidden;
+  width: 100%;
+  padding: 0px 0px;
+  border-radius: 20px;
+  background: #f7f9fa;
+}
+
+.who-to-follow > .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid #ebeef0;
+  padding: 20px 20px;
+}
+
+.who-to-follow .suggestions .suggestion {
+  padding: 15px 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 48px 1fr 80px;
+      grid-template-columns: 48px 1fr 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.who-to-follow .suggestions .suggestion .suggestion-avatar {
+  background-color: #fff;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.who-to-follow .suggestions .suggestion .suggestion-avatar .img {
+  width: 70%;
+  fill: #1da1f2;
+}
+
+.who-to-follow .suggestions .suggestion .suggestion-detail {
+  padding: 0px 10px;
+}
+
+.who-to-follow .suggestions .suggestion .suggestion-detail small {
+  color: #5b7083;
+}
+
+.who-to-follow .suggestions .suggestion .follow-btn {
+  border: 2px solid #1da1f2;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: #1da1f2;
+  font-weight: bold;
+}
+
+.who-to-follow .suggestions .suggestion:not(:last-child) {
+  border-bottom: 1px solid #ebeef0;
+}
+
+.who-to-follow .suggestions .show-more {
+  padding: 15px 20px;
+}
+
+.who-to-follow .suggestions .show-more a {
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+.who-to-follow .suggestions .show-more:hover {
+  background: #ebeef0;
+}
+
 .right {
   padding: 0px 15px;
   display: -webkit-box;
