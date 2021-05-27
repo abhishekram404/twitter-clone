@@ -1,0 +1,33 @@
+.App {
+  width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  margin: 0px auto;
+  width: 1350px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1.5fr;
+      grid-template-columns: 1fr 2fr 1.5fr;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.middle {
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.left {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.search-bar {
+  width: 100%;
+  background-color: #f7f9fa;
+}
+/*# sourceMappingURL=App.css.map */
