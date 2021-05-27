@@ -7,8 +7,8 @@
   & > .top {
     @include flex-center;
     justify-content: flex-start;
-    border-bottom: 1px solid #ebeef0;
     padding: 20px 20px;
+    @include border-bottom;
     h2 {
     }
   }
@@ -52,7 +52,7 @@
       background: #ebeef0;
     }
     .suggestion:not(:last-child) {
-      border-bottom: 1px solid #ebeef0;
+      @include border-bottom;
     }
 
     .show-more {

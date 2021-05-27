@@ -280,8 +280,8 @@ body .App {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  border-bottom: 1px solid #ebeef0;
   padding: 20px 20px;
+  border-bottom: 1px solid #ebeef0;
 }
 
 .who-to-follow .suggestions .suggestion {
@@ -505,5 +505,73 @@ body .App {
 
 .right > * {
   margin-bottom: 15px;
+}
+
+.message-popup {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  bottom: -440px;
+  right: 2%;
+  border-radius: 20px;
+  -webkit-box-shadow: -6px -4px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: -6px -4px 20px rgba(0, 0, 0, 0.4);
+  background: #fff;
+}
+
+.message-popup .top {
+  padding: 15px 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 35px 35px;
+      grid-template-columns: 1fr 35px 35px;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #ebeef0;
+}
+
+.message-popup .top h3 {
+  font-size: 1.3rem;
+}
+
+.message-popup .top .new-message,
+.message-popup .top .expand {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-popup .top .new-message svg,
+.message-popup .top .expand svg {
+  width: 60%;
+  height: 60%;
+  fill: #1da1f2;
+}
+
+.message-popup .top > *:not(h3):hover {
+  background: rgba(29, 161, 242, 0.2);
+}
+
+.expanded {
+  bottom: 0px;
+}
+
+.expanded .expand svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=App.css.map */

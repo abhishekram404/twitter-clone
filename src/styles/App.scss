@@ -48,7 +48,11 @@ body {
   align-items: center;
 }
 
+@mixin border-bottom {
+  border-bottom: 1px solid #ebeef0;
+}
 @import "main.scss";
 @import "middle.scss";
 @import "left.scss";
 @import "right.scss";
+@import "messagepopup";

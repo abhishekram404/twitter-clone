@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ebeef0;
+    @include border-bottom;
     padding: 15px;
     h2 {
       font-size: 1.5rem;
@@ -81,7 +81,7 @@
     }
   }
   .trend:not(:last-child) {
-    border-bottom: 1px solid #ebeef0;
+    @include border-bottom;
   }
   .trend:hover {
     background: #ebeef0;
