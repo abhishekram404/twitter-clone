@@ -1,7 +1,7 @@
 import React from "react";
 
-//Icons
-import Logo from "../assets/ui-icons/Twitter-logo.svg";
+//Picture
+import Profilepic from "./black.jpeg";
 
 export default function Left() {
   return (
@@ -136,6 +136,13 @@ export default function Left() {
           </button>
         </nav>
       </div>
+
+      <div className="left-bottom-profile">
+        {/* <img className='bottom-profile-pic' src = {Profilepic} /> */}
+
+        <h1>Left Botttom</h1>
+      </div>
+
     </div>
   );
 }
