@@ -29,19 +29,18 @@ body .App {
 
 .middle {
   top: 0;
-  position: -webkit-sticky;
-  position: sticky;
   padding: 0;
   border: 0.5px solid rgba(0, 0, 0, 0.3);
   font-size: 1.4rem;
   line-height: 2rem;
-  height: 100vh;
+  height: 100%;
 }
 
 .middle .middle-top {
   top: 0;
   position: -webkit-sticky;
   position: sticky;
+  background-color: white;
   padding: 0.5rem;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
   display: -webkit-box;
@@ -63,6 +62,196 @@ body .App {
   height: 25px;
   width: 25px;
   fill: #1da1f2;
+}
+
+.newTweet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.newTweet .picture-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newTweet .picture-input img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.newTweet .picture-input input {
+  font-size: 20px;
+  border: none;
+  width: 85%;
+  height: 50px;
+  top: 0;
+}
+
+.newTweet .picture-input input:focus {
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.newTweet .actions-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  padding-top: 0%;
+}
+
+.newTweet .actions-buttons .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.newTweet .actions-buttons .actions svg {
+  height: 50px;
+  width: 50px;
+  padding: 15px;
+}
+
+.newTweet .actions-buttons .actions svg:hover {
+  cursor: pointer;
+  fill: #1da1f2;
+}
+
+.newTweet .actions-buttons .tweet-button-submit button {
+  background-color: #1da1f2;
+  color: white;
+  padding: 10px;
+  height: 40px;
+  width: 80px;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.main-post-div {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.main-post-div .post-profile-picture {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.main-post-div .post-status-info {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-post-div .post-status-info .name-username-time-more {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-post-div .post-status-info .name-username-time-more .name-username-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-post-div .post-status-info .name-username-time-more .name-username-time h4 {
+  padding: 5px;
+  font-size: 20px;
+  color: #525252;
+}
+
+.main-post-div .post-status-info .name-username-time-more .name-username-time h5 {
+  padding: 5px;
+  font-size: 15px;
+  color: #525252;
+}
+
+.main-post-div .post-status-info .name-username-time-more .post-status-more {
+  padding: 5px;
+}
+
+.main-post-div .post-status-info .name-username-time-more .post-status-more svg {
+  height: 20px;
+  width: 20px;
+}
+
+.main-post-div .post-status-info .post-tweet p {
+  font-size: 20px;
+}
+
+.main-post-div .post-status-info .post-tweet-image img {
+  height: 300px;
+  width: 500px;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.main-post-div .post-status-info .post-button-action {
+  margin-left: 20px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-post-div .post-status-info .post-button-action svg {
+  height: 25px;
+  width: 25px;
 }
 
 .left {
