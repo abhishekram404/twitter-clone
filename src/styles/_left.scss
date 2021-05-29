@@ -1,17 +1,18 @@
 .left {
   position: sticky;
   top: 0;
-  height: 100%;
-  width: 15%;
+  height: 100vh;
+  width: 25vw;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
   .nav-component {
     padding-left: 2.5rem;
-    height: fit-content;
+    height: 80%;
     .nav-bar {
       width: 20vw;
-      height: 80vh;
+      height: 80%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -31,8 +32,8 @@
           background-color: rgba(29, 161, 242, 0.1);
           border-radius: 25px;
           width: fit-content;
-          // color: $primaryColor;
-          // fill: $primaryColor;
+          color: $primaryColor;
+          fill: $primaryColor;
         }
 
         svg {
@@ -40,9 +41,9 @@
           width: 26px;
         }
 
-        // .r-13gxpu9 {
-        //   fill: $primaryColor;
-        // }
+        .r-13gxpu9 {
+          fill: $primaryColor;
+        }
 
         .r-16y2uox {
           padding: 0%;
@@ -61,18 +62,20 @@
       }
 
       .button {
-        // background-color: $primaryColor;
-        height: 3rem;
-        width: 15rem;
+        background-color: $primaryColor;
+        padding: 12px 10px;
         border: none;
         border-radius: 25px;
         cursor: pointer;
         margin-top: 5px;
         transition: all 0.3s ease;
+        box-shadow: 2px 3px 5px grey;
 
-        // &:active {
-        //   background-color: $primaryColor;
-        // }
+        &:active {
+          background-color: $primaryColor;
+          box-shadow: none;
+          transform: translateY(5px);
+        }
         &:hover {
           background-color: rgb(26, 145, 218);
         }
@@ -87,14 +90,50 @@
     }
   }
 
-  .left-bottom-profile {
-    width: 80%;
-    height: 20%;
+  a{
+    text-decoration: none;
+    color: black;
+  }
 
-    .bottom-profile-pic {
+  .left-bottom-profile {
+    width: 20vw;
+    height: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+
+    
+
+    .picture-name {
+      display: flex;
+      justify-content: center;
+      .picture {
+        padding: 5px;
+        .bottom-profile-pic {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+      .names {
+        padding: 8px;
+      }
+    }
+
+    .more-option {
       height: 20px;
-      width: 20px;
-      border-radius: 50%;
+      width: 25px;
+      padding: 5px; 
+    }
+
+
+    &:hover {
+      // width: 20vw;  
+      align-items: center;
+      cursor: pointer;
+      border-radius: 25px;
+      background-color: rgba(29, 161, 242, 0.1);
     }
   }
 }

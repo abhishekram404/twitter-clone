@@ -2,20 +2,19 @@
   width: 100%;
 }
 
-// $primaryColor : #1DA1F2;
+$primaryColor: #1da1f2;
 
-// $homeBlack: #0F1419;
-// $grey : #5B7083;
-// $bakground : #F7F9Fa;
+$homeBlack: #0f1419;
+$grey: #5b7083;
+$bakground: #f7f9fa;
 
+@import "main.scss";
+@import "middle.scss";
+@import "left.scss";
+@import "right.scss";
 
-// @import "main.scss";
-// @import "middle.scss";
-// @import "left.scss";
-// @import "right.scss";
-
-@import './left';
-@import './main';
-@import './middle';
-@import './right';
-@import './search';
+// @import './left';
+// @import './main';
+// @import './middle';
+// @import './right';
+// @import './search';
