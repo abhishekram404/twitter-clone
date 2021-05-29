@@ -29,7 +29,7 @@ export default function Search() {
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
-            class="search-icon"
+            className="search-icon"
             ref={searchIcon}
           >
             <g>

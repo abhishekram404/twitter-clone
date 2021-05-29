@@ -4,6 +4,7 @@
 }
 .middle {
   top: 0;
+  position: sticky;
   padding: 0;
   border: 0.5px solid rgba($color: #000000, $alpha: 0.3);
   font-size: 1.4rem;
@@ -11,6 +12,8 @@
   height: 100vh;
 
   .middle-top {
+    top:0;
+    position: sticky;
     padding: 0.5rem;
     border-bottom: 0.5px solid rgba($color: #000000, $alpha: 0.3);
     display: flex;
