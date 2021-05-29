@@ -2,4 +2,124 @@
   position: sticky;
   top: 0;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 10px;
+
+  .nav-component {
+    .nav-bar {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .active {
+        fill: $primaryColor;
+        color: $primaryColor;
+      }
+
+      a {
+        width: fit-content;
+        padding: 8px 20px;
+        @include flex-center;
+        color: black;
+        text-decoration: none;
+        align-items: center;
+        transition: all 0.3s ease;
+        border-radius: 25px;
+        margin: 5px 0px;
+
+        &:hover {
+          background-color: rgba(29, 161, 242, 0.1);
+          color: $primaryColor;
+          fill: $primaryColor;
+        }
+
+        svg {
+          @include csquare(26px, 26px);
+        }
+
+        .active {
+          fill: $primaryColor;
+        }
+
+        .nav-name {
+          font-size: 20px;
+          text-decoration: none;
+          font-weight: 700;
+          margin-left: 20px;
+          margin-right: 16px;
+        }
+      }
+
+      .button {
+        background-color: $primaryColor;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 2px 3px 5px grey;
+        padding: 12px 0px;
+
+        &:hover {
+          background-color: rgb(26, 145, 218);
+        }
+        .button-name {
+          font-size: 20px;
+          text-decoration: none;
+          font-weight: 150px;
+          color: whitesmoke;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .left-bottom-profile {
+    padding: 10px 15px;
+    @include flex-center;
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+
+    .picture-name {
+      display: flex;
+      align-items: center;
+      .picture {
+        @include csquare(40px, 40px);
+        overflow: hidden;
+        .bottom-profile-pic {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .names {
+        padding: 8px;
+        font-size: 1.2rem;
+        h6 {
+          color: $grey;
+        }
+      }
+    }
+
+    .more-option {
+      padding: 5px;
+      @include flex-center;
+      svg {
+        @include csquare(25px, 25px);
+      }
+    }
+
+    &:hover {
+      align-items: center;
+      background-color: rgba(29, 161, 242, 0.2);
+    }
+  }
 }

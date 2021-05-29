@@ -1,4 +1,51 @@
-.search-bar {
+.search-cont {
   width: 100%;
-  background-color: #f7f9fa;
+  position: sticky;
+  top: 0px;
+  padding: 5px 0px;
+
+  background: #fff;
+  .search-bar {
+    @include flex-center;
+    width: 100%;
+    background-color: #ebeef0;
+    border-radius: 30px;
+    padding: 0px 20px;
+    overflow: hidden;
+    label {
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: #6d8090;
+      }
+    }
+    .clear-label {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: $primaryColor;
+      @include flex-center;
+      .clear {
+        fill: #fff;
+        width: 10px;
+        height: 10px;
+      }
+    }
+    input {
+      flex: 1;
+      padding: 15px 10px;
+      height: 100%;
+      background: none;
+      border: none;
+      outline: none;
+    }
+  }
+  .search-active {
+    background: transparent;
+    box-shadow: 0 0 0 1px $primaryColor;
+  }
+
+  .search-icon-active {
+    fill: $primaryColor;
+  }
 }

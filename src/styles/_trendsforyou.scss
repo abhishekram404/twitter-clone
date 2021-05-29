@@ -1,0 +1,100 @@
+.trends-for-you {
+  background: $background;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // position: sticky;
+  // top: 70px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include border-bottom;
+    padding: 15px;
+    h2 {
+      font-size: 1.5rem;
+    }
+    span {
+      transition: 0.2s;
+      @include csquare(40px, 40px);
+      @include flex-center;
+      svg {
+        height: 25px;
+        width: 25px;
+        fill: $primaryColor;
+      }
+    }
+    & span:hover {
+      background: rgba($color: $primaryColor, $alpha: 0.2);
+    }
+
+    // @include flex-center;
+  }
+  .trends-list {
+    display: flex;
+    flex-direction: column;
+
+    .trend {
+      padding: 10px 20px;
+      display: flex;
+      transition: 0.4s;
+      cursor: pointer;
+      justify-content: space-between;
+      align-items: center;
+      //   height: 96px;
+      .trend-left {
+        // flex: 1;
+        //   display: flex;
+        //   justify-content: center;
+        //   flex-direction: column;
+        small {
+          font-size: 0.8rem;
+          color: #5e7385;
+        }
+        h2 {
+          font-size: 1rem;
+          color: $black;
+          margin: 5px 0px;
+        }
+      }
+      .trend-right {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        @include flex-center;
+        .options-icon {
+          fill: #6d8090;
+          height: 18px;
+          width: 18px;
+        }
+      }
+      .trend-right:hover {
+        background-color: rgba($color: $primaryColor, $alpha: 0.2);
+      }
+      .trend-right:hover > .options-icon {
+        fill: $primaryColor;
+      }
+    }
+  }
+  .trend:not(:last-child) {
+    @include border-bottom;
+  }
+  .trend:hover {
+    background: #ebeef0;
+  }
+
+  .show-more {
+    padding: 15px 20px;
+    a {
+      text-decoration: none;
+      color: $primaryColor;
+    }
+  }
+  .show-more:hover {
+    background: #ebeef0;
+  }
+}
