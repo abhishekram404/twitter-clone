@@ -1,0 +1,45 @@
+.message-popup {
+  transition: 0.3s;
+  width: 400px;
+  height: 500px;
+  position: fixed;
+  bottom: -440px;
+  right: 2%;
+  border-radius: 20px;
+  box-shadow: -6px -4px 20px rgba($color: #000000, $alpha: 0.4);
+  background: #fff;
+  .top {
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 1fr 35px 35px;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    @include border-bottom;
+    h3 {
+      font-size: 1.3rem;
+    }
+    .new-message,
+    .expand {
+      @include csquare(40px, 40px);
+      @include flex-center;
+
+      svg {
+        width: 60%;
+        height: 60%;
+        fill: $primaryColor;
+      }
+    }
+    & > *:not(h3):hover {
+      background: rgba($color: $primaryColor, $alpha: 0.2);
+    }
+  }
+}
+.expanded {
+  bottom: 0px;
+  .expand {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}

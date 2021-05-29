@@ -1,5 +1,45 @@
-.App {
-  width: 100%;
+$primaryColor: #1da1f2;
+$black: #0f1419;
+$grey: #5b7083;
+$background: #f7f9fa;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  .App {
+    width: 100%;
+  }
+}
+
+@mixin follow-btn {
+  border: 2px solid $primaryColor;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: $primaryColor;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+@mixin square($width, $height) {
+  height: $height;
+  width: $width;
+}
+@mixin csquare($width, $height) {
+  height: $height;
+  width: $width;
+  border-radius: 50%;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 $primaryColor: #1da1f2;
@@ -8,13 +48,20 @@ $homeBlack: #0f1419;
 $grey: #5b7083;
 $bakground: #f7f9fa;
 
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin border-bottom {
+  border-bottom: 1px solid #ebeef0;
+}
+
 @import "main.scss";
 @import "middle.scss";
 @import "left.scss";
 @import "right.scss";
 
-// @import './left';
-// @import './main';
-// @import './middle';
-// @import './right';
-// @import './search';
+@import "messagepopup";
+

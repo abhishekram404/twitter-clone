@@ -1,0 +1,69 @@
+.who-to-follow {
+  overflow: hidden;
+  width: 100%;
+  padding: 0px 0px;
+  border-radius: 20px;
+  background: $background;
+  & > .top {
+    @include flex-center;
+    justify-content: flex-start;
+    padding: 20px 20px;
+    @include border-bottom;
+    h2 {
+    }
+  }
+  .suggestions {
+    .suggestion {
+      transition: 0.4s;
+
+      padding: 15px 20px;
+      display: grid;
+      grid-template-columns: 48px 1fr 80px;
+      align-items: center;
+      .suggestion-avatar {
+        background-color: #fff;
+        @include csquare(48px, 48px);
+        @include flex-center;
+        overflow: hidden;
+        .img {
+          width: 70%;
+          fill: $primaryColor;
+          //   height: 100%;
+        }
+      }
+      .suggestion-detail {
+        padding: 0px 10px;
+        h3 {
+        }
+        small {
+          color: $grey;
+        }
+      }
+      .follow-btn {
+        @include follow-btn;
+      }
+      .follow-btn:hover {
+        background: $primaryColor;
+        color: #fff;
+      }
+    }
+
+    .suggestion:hover {
+      background: #ebeef0;
+    }
+    .suggestion:not(:last-child) {
+      @include border-bottom;
+    }
+
+    .show-more {
+      padding: 15px 20px;
+      a {
+        text-decoration: none;
+        color: $primaryColor;
+      }
+    }
+    .show-more:hover {
+      background: #ebeef0;
+    }
+  }
+}
