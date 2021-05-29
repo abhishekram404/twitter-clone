@@ -23,7 +23,6 @@ export default function Search() {
     setSearchValue(e.target.value);
   };
   return (
-
     <div className="search-cont">
       <div className="search-bar" htmlFor="search" ref={searchBar}>
         <label htmlFor="search">
@@ -66,6 +65,6 @@ export default function Search() {
           </label>
         )}
       </div>
-
+    </div>
   );
 }
