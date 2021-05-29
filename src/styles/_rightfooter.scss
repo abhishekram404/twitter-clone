@@ -1,0 +1,11 @@
+.right-footer {
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    text-decoration: none;
+  }
+  & > * {
+    color: $grey;
+    margin: 5px 10px;
+  }
+}

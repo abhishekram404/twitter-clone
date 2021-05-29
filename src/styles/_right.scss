@@ -1,1 +1,12 @@
 @import "search";
+@import "trendsforyou";
+@import "whotofollow";
+@import "topicstofollow";
+@import "rightfooter";
+.right {
+  padding: 0px 15px;
+  @include flex-column;
+}
+.right > * {
+  margin-bottom: 15px;
+}
