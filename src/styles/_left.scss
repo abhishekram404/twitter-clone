@@ -2,4 +2,138 @@
   position: sticky;
   top: 0;
   height: 100vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .nav-component {
+    padding-left: 2.5rem;
+    height: 80%;
+    .nav-bar {
+      width: 20vw;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      a {
+        height: 25px;
+        width: fit-content;
+        padding: 0.8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: black;
+        text-decoration: none;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: rgba(29, 161, 242, 0.1);
+          border-radius: 25px;
+          width: fit-content;
+          color: $primaryColor;
+          fill: $primaryColor;
+        }
+
+        svg {
+          height: 26px;
+          width: 26px;
+        }
+
+        .r-13gxpu9 {
+          fill: $primaryColor;
+        }
+
+        .r-16y2uox {
+          padding: 0%;
+          height: 30px;
+          width: 30px;
+        }
+
+        .nav-name {
+          font-size: 20px;
+          text-decoration: none;
+          font-weight: 700;
+          margin-left: 20px;
+          margin-right: 16px;
+          vertical-align: top;
+        }
+      }
+
+      .button {
+        background-color: $primaryColor;
+        padding: 12px 10px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-top: 5px;
+        transition: all 0.3s ease;
+        box-shadow: 2px 3px 5px grey;
+
+        &:active {
+          background-color: $primaryColor;
+          box-shadow: none;
+          transform: translateY(5px);
+        }
+        &:hover {
+          background-color: rgb(26, 145, 218);
+        }
+        .button-name {
+          font-size: 20px;
+          text-decoration: none;
+          font-weight: 150px;
+          color: whitesmoke;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .left-bottom-profile {
+    width: 20vw;
+    height: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+
+    
+
+    .picture-name {
+      display: flex;
+      justify-content: center;
+      .picture {
+        padding: 5px;
+        .bottom-profile-pic {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+      .names {
+        padding: 8px;
+      }
+    }
+
+    .more-option {
+      height: 20px;
+      width: 25px;
+      padding: 5px; 
+    }
+
+
+    &:hover {
+      // width: 20vw;  
+      align-items: center;
+      cursor: pointer;
+      border-radius: 25px;
+      background-color: rgba(29, 161, 242, 0.1);
+    }
+  }
 }
