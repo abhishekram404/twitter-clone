@@ -41,7 +41,7 @@ body .App {
   position: -webkit-sticky;
   position: sticky;
   background-color: white;
-  padding: 0.5rem;
+  padding: 5px 10px;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,10 +91,10 @@ body .App {
 }
 
 .newTweet .picture-input img {
-  width: 75px;
   height: 75px;
+  width: 75px;
   border-radius: 50%;
-  padding: 1rem;
+  padding: 15px;
 }
 
 .newTweet .picture-input input {
@@ -171,12 +171,15 @@ body .App {
 .main-post-div .post-profile-picture {
   height: 80px;
   width: 80px;
-  padding: 10px;
   border-radius: 50%;
+  padding: 12px;
 }
 
 .main-post-div .post-status-info {
-  width: 80%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,11 +190,9 @@ body .App {
 }
 
 .main-post-div .post-status-info .name-username-time-more {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -204,18 +205,34 @@ body .App {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-post-div .post-status-info .name-username-time-more .name-username-time h4 {
-  padding: 5px;
   font-size: 20px;
-  color: #525252;
+  color: #292828;
 }
 
 .main-post-div .post-status-info .name-username-time-more .name-username-time h5 {
-  padding: 5px;
+  padding: 0px 5px;
   font-size: 15px;
   color: #525252;
+  position: relative;
+}
+
+.main-post-div .post-status-info .name-username-time-more .name-username-time #time::before {
+  content: "";
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  background: #525252;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .main-post-div .post-status-info .name-username-time-more .post-status-more {
@@ -228,14 +245,14 @@ body .App {
 }
 
 .main-post-div .post-status-info .post-tweet p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .main-post-div .post-status-info .post-tweet-image img {
   height: 300px;
-  width: 500px;
-  padding: 20px;
-  border-radius: 40px;
+  width: 100%;
+  padding: 10px 0px;
+  border-radius: 50px;
 }
 
 .main-post-div .post-status-info .post-button-action {
@@ -905,9 +922,6 @@ body .App {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .right > * {

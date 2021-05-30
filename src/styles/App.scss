@@ -45,7 +45,7 @@ body {
 @mixin flex-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
 }
 
 @mixin border-bottom {
